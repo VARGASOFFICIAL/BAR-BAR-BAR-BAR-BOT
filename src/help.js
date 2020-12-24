@@ -1,63 +1,72 @@
 const help = (prefix) => {
-	return `> *Sticker Commands* <
-command : *${prefix}sticker* or *${prefix}stiker*
-desc : convert image/gif/video to sticker
-usage : reply image/gif/video, or send image/gif/video with caption\n
-command : *${prefix}sticker nobg* or *${prefix}stiker nobg*
-desc : convert image to sticker while removing the background
-usage : reply image, or send image with caption\n
-command : *${prefix}toimg*
-desc : convert sticker to image
-usage : reply sticker\n
-command : *${prefix}tsticker* or *${prefix}tstiker*
-desc : convert text to sticker
-usage : *${prefix}tsticker text in here*\n
-> *Meme Commands* <
-command : *${prefix}meme*
-desc : random meme images [english]
-usage : just send the command\n
-command : *${prefix}memeindo*
-desc : random meme images [indo]
-usage : just send the command\n
-> *Others Commands* <
-command : *${prefix}gtts*
-desc : convert text to speech/audio
-usage : *${prefix}gtts [cc] [text]*\nexample : *${prefix}gtts ja On2-chan*\n
-command : *${prefix}loli*
-desc : random loli images
-usage : just send the command\n
-command : *${prefix}nsfwloli*
-desc : random nsfw loli images
-usage : just send the command\n
-command : *${prefix}url2img*
-desc : take web screenshots
-usage : *${prefix}url2img [tipe] [url]*\n
-command : *${prefix}simi*
-desc : your message will be replied to by simi
-usage : *${prefix}simi yourmessage*\n
-command : *${prefix}ocr*
-desc : take the text in the picture
-usage : reply image, or send image with caption\n
-command : *${prefix}wait*
-desc : search anime with image [ What Anime Is This/That ]
-usage : reply image, or send image with caption\n
-command : *${prefix}setprefix*
-desc : replace prefix
-usage : *${prefix}setprefix [text|optional]*\nexample : *${prefix}setprefix ?*
-note : This command can only be used by the bot owner\n
-> *Group Comands* <
-command : *${prefix}linkgroup*
-desc : take the group link
-usage : just send the command\
-note : can only be used when the bot becomes admin, and the one who sends the command is admin!\n
-command : *${prefix}tagall*
-desc : tags all group members including admins too
-usage : just send the command
-note : This command can be used if you are a group admin\n
-command : *${prefix}simih*
-desc : activate simi mode in the group
-usage : *${prefix}simih 1* to activate simi mode and *${prefix}simih 0* to deactivate simi mode
-note : This command can be used if you are a group admin\n`
+	return `> * Perintah Stiker * <
+perintah: * $ {prefix} sticker * atau * $ {prefix} stiker *
+desc: mengubah gambar / gif / video menjadi stiker
+penggunaan: balas gambar / gif / video, atau kirim gambar / gif / video dengan teks \ n
+perintah: * $ {prefix} sticker nobg * atau * $ {prefix} stiker nobg *
+desc: ubah gambar menjadi stiker sambil menghapus latar belakang
+penggunaan: membalas gambar, atau mengirim gambar dengan teks \ n
+perintah: * $ {prefix} toimg *
+desc: mengubah stiker menjadi gambar
+penggunaan: stiker balas \ n
+perintah: * $ {prefix} tsticker * atau * $ {prefix} tstiker *
+desc: mengubah teks menjadi stiker
+penggunaan: * teks tsticker $ {prefix} di sini * \ n
+> * Perintah Meme * <
+perintah: * $ {prefix} meme *
+desc: gambar meme acak [inggris]
+penggunaan: kirim saja perintah \ n
+perintah: * $ {prefix} memeindo *
+desc: gambar meme acak [indo]
+penggunaan: kirim saja perintah \ n
+> * Perintah Lainnya * <
+perintah: * $ {prefix} gtts *
+desc: mengubah teks menjadi ucapan / audio
+penggunaan: * $ {prefix} gtts [cc] [text] * \ nexample: * $ {prefix} gtts ja On2-chan * \ n
+perintah: * $ {prefix} loli *
+desc: gambar loli acak
+penggunaan: kirim saja perintah \ n
+perintah: * $ {prefix} nsfwloli *
+desc: gambar loli nsfw acak
+penggunaan: kirim saja perintah \ n
+perintah: * $ {prefix} url2img *
+desc: ambil screenshot web
+penggunaan: * $ {prefix} url2img [tipe] [url] * \ n
+perintah: * $ {prefix} simi *
+desc: pesan Anda akan dibalas oleh simi
+penggunaan: * $ {prefix} simi yourmessage * \ n
+perintah: * $ {prefix} ocr *
+desc: ambil teks pada gambar
+penggunaan: membalas gambar, atau mengirim gambar dengan teks \ n
+perintah: * $ {prefix} tunggu *
+desc: cari anime dengan gambar [What Anime Is This / That]
+penggunaan: membalas gambar, atau mengirim gambar dengan teks \ n
+perintah: * $ {prefix} setprefix *
+desc: ganti awalan
+penggunaan: * $ {prefix} setprefix [teks | opsional] * \ nexample: * $ {prefix} setprefix? *
+catatan: Perintah ini hanya dapat digunakan oleh pemilik bot \ n
+> * Perintah Grup * <
+perintah: * $ {prefix} linkgroup *
+desc: ambil tautan grup
+penggunaan: kirim saja perintah \
+catatan: hanya dapat digunakan ketika bot menjadi admin, dan yang mengirimkan perintah adalah admin! \ n
+perintah: * $ {prefix} tagall *
+desc: menandai semua anggota grup termasuk admin juga
+penggunaan: kirim saja perintahnya
+catatan: Perintah ini dapat digunakan jika Anda adalah admin grup \ n
+perintah: * $ {prefix} simih *
+desc: aktifkan mode simi di grup
+penggunaan: * $ {prefix} simih 1 * untuk mengaktifkan mode simi dan * $ {prefix} simih 0 * untuk menonaktifkan mode simi
+catatan: Perintah ini dapat digunakan jika Anda adalah admin grup \n
+perintah: * $ {prefix} add *
+desc: untuk menambah member grup
+penggunaan: $ {prefix} add 628xxxxxxxxxxx 
+catatan: hanya dapat digunakan ketika bot menjadi admin, dan yang mengirimkan perintah adalah admin! \ n
+perintah: * $ {prefix} kick *
+desc: untuk mengeluarkan member grup
+penggunaan: $ {prefix} kick @xxxx
+catatan: hanya dapat digunakan ketika bot menjadi admin, dan yang mengirimkan perintah adalah admin! \ n`
 }
 
 exports.help = help
+
