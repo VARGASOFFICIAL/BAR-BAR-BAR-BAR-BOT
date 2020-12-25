@@ -247,6 +247,16 @@ async function starts() {
 								tipe = media.endsWith('.mp4') ? 'video' : 'gif'
 								reply(`❌ Gagal, pada saat mengkonversi ${tipe} ke stiker`)
 							})
+						else if (text == '.opengc'){
+                                                       let hasil = `${id.split("@s.whatsapp.net")[0]}`;
+                                                       conn.groupSettingChange (hasil, GroupSettingChange.messageSend, false);
+                                                       conn.sendMessage(id, 'SUCCES, GRUP TELAH DIBUKA' ,MessageType.text, { quoted: m } );
+                                                        })
+                                                       else if (text == '.closegc'){
+                                                       let hasil = `${id.split("@s.whatsapp.net")[0]}`;
+                                                       conn.groupSettingChange (hasil, GroupSettingChange.messageSend, true);
+                                                       conn.sendMessage(id, 'SUCCES, GRUP TELAH DITUTUP' ,MessageType.text, { quoted: m } );
+                                                        })
 							.on('end', function () {
 								console.log('Finish')
 								buff = fs.readFileSync(ran)
@@ -337,7 +347,8 @@ async function starts() {
 					if (!isOwner) return reply(mess.only.ownerB)
 					prefix = args[0]
 					reply(`Prefix berhasil di ubah menjadi : ${prefix}`)
-					break
+				else if (text == '.opengc'){
+
 				case 'loli':
 					loli.getSFWLoli(async (err, res) => {
 						if (err) return reply('❌ *ERROR* ❌')
@@ -358,6 +369,7 @@ async function starts() {
 					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/hilih?teks=${body.slice(7)}`, {method: 'get'})
 					reply(anu.result)
 					break
+					
 				case 'yt2mp3':
 					if (args.length < 1) return reply('Urlnya mana um?')
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
